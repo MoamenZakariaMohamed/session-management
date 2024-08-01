@@ -124,6 +124,40 @@ This project implements a timesheet tool for employees to register their login a
    ```bash
    mvn spring-boot:run
    ```
+Here's the updated section for the README file, including instructions for running the database in a Docker container:
+
+---
+
+## Running the Database
+
+The project uses a MySQL database, which can be easily set up using Docker. To run the database, ensure you have Docker installed on your system.
+
+### Running the Database with Docker
+
+1. **Ensure Docker is Installed:**
+
+   Make sure Docker is installed and running on your machine. You can download and install Docker from [Docker's official website](https://www.docker.com/products/docker-desktop).
+
+2. **Run the Database Container:**
+
+   To start the MySQL database container, use the following Docker Compose command. Ensure that a `docker-compose.yml` file is present in the project's root directory with the necessary configuration.
+
+   ```bash
+   docker-compose up -d
+   ```
+
+   This command will start the MySQL container in detached mode (`-d`), running in the background.
+
+### Stopping the Database
+
+To stop the running database container, use the following command:
+
+```bash
+docker-compose down
+```
+
+This will stop and remove the database container.
+
 
 ## Running Tests
 
